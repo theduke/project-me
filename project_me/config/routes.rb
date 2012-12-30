@@ -1,4 +1,7 @@
 ProjectMe::Application.routes.draw do
+  resources :time_reports
+
+
   resources :tasks
 
 
