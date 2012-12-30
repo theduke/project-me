@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @document.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @document.description %>
+</p>
+
+<p>
+  <b>Path:</b>
+  <%= @document.path %>
+</p>
+
+<p>
+  <b>Mimetype:</b>
+  <%= @document.mimeType %>
+</p>
+
+<p>
+  <b>Public:</b>
+  <%= @document.public %>
+</p>
+
+
+<%= link_to 'Edit', edit_document_path(@document) %> |
+<%= link_to 'Back', documents_path %>
