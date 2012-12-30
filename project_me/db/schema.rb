@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121230224544) do
+ActiveRecord::Schema.define(:version => 20121230231609) do
 
   create_table "documents", :force => true do |t|
     t.string   "title"
@@ -22,5 +22,32 @@ ActiveRecord::Schema.define(:version => 20121230224544) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
+
+  create_table "documents_tasks", :id => false, :force => true do |t|
+    t.integer "document_id"
+    t.integer "task_id"
+  end
+
+  add_index "documents_tasks", ["task_id"], :name => "index_documents_tasks_on_task_id"
+
+  create_table "projects", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "status"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "tasks", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.datetime "duedate"
+    t.string   "status"
+    t.integer  "project_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "tasks", ["project_id"], :name => "index_tasks_on_project_id"
 
 end
