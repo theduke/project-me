@@ -1,0 +1,11 @@
+UML code for http://yuml.me/diagram/class/draw
+
+// Cool Class Diagram
+[Project|title;description;status]<>1-has 0..*>[File|title;description;mime_type;path]
+[Project]<>1-has 0..*>[WikiPage|title;body]
+[WikiPage]<>1-has 0..*>[File]
+[Project]<>1-has *>[Task|title;description;duedate;status]
+[Task]<>1-has *>[File]
+[Task]<>1-has *>[TimeReport|started;stopped;note]
+[Variable|name;value]
+
