@@ -31,6 +31,18 @@
     <%= f.label :project %><br />
     <%= f.text_field :project %>
   </div>
+  <div class="files-list">
+    <h3>Files</h3>
+    <%= f.fields_for :documents do |builder| %>
+      <%= builder.label :title %>
+      <%= builder.text_field :title %>
+
+      <% if builder.object %>
+        <%= builder.check_box '_destroy' %>
+        <%= builder.label '_destroy', 'Remove' %>
+      <% end %>
+    <% end %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
