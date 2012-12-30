@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121230231609) do
+ActiveRecord::Schema.define(:version => 20121230234439) do
 
   create_table "documents", :force => true do |t|
     t.string   "title"
@@ -49,5 +49,32 @@ ActiveRecord::Schema.define(:version => 20121230231609) do
   end
 
   add_index "tasks", ["project_id"], :name => "index_tasks_on_project_id"
+
+  create_table "time_reports", :force => true do |t|
+    t.datetime "started"
+    t.datetime "stopped"
+    t.integer  "task_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "time_reports", ["task_id"], :name => "index_time_reports_on_task_id"
+
+  create_table "variables", :force => true do |t|
+    t.string   "name"
+    t.text     "value"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "wiki_pages", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.integer  "project_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "wiki_pages", ["project_id"], :name => "index_wiki_pages_on_project_id"
 
 end
