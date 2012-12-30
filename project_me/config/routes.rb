@@ -1,4 +1,7 @@
 ProjectMe::Application.routes.draw do
+  resources :wiki_pages
+
+
   resources :time_reports
 
 
