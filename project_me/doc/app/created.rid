@@ -1,0 +1,20 @@
+Mon, 31 Dec 2012 00:47:02 +0100
+doc/README_FOR_APP	Sun, 30 Dec 2012 22:46:42 +0100
+app/controllers/application_controller.rb	Sun, 30 Dec 2012 22:46:42 +0100
+app/controllers/documents_controller.rb	Sun, 30 Dec 2012 23:45:44 +0100
+app/controllers/projects_controller.rb	Mon, 31 Dec 2012 00:00:15 +0100
+app/controllers/tasks_controller.rb	Mon, 31 Dec 2012 00:29:57 +0100
+app/controllers/time_reports_controller.rb	Mon, 31 Dec 2012 00:41:14 +0100
+app/controllers/wiki_pages_controller.rb	Mon, 31 Dec 2012 00:44:39 +0100
+app/helpers/application_helper.rb	Sun, 30 Dec 2012 22:46:42 +0100
+app/helpers/documents_helper.rb	Sun, 30 Dec 2012 23:45:44 +0100
+app/helpers/projects_helper.rb	Mon, 31 Dec 2012 00:00:15 +0100
+app/helpers/tasks_helper.rb	Mon, 31 Dec 2012 00:07:05 +0100
+app/helpers/time_reports_helper.rb	Mon, 31 Dec 2012 00:41:14 +0100
+app/helpers/wiki_pages_helper.rb	Mon, 31 Dec 2012 00:44:39 +0100
+app/models/document.rb	Mon, 31 Dec 2012 00:13:09 +0100
+app/models/project.rb	Mon, 31 Dec 2012 00:10:31 +0100
+app/models/task.rb	Mon, 31 Dec 2012 00:13:21 +0100
+app/models/time_report.rb	Mon, 31 Dec 2012 00:41:13 +0100
+app/models/variable.rb	Mon, 31 Dec 2012 00:43:08 +0100
+app/models/wiki_page.rb	Mon, 31 Dec 2012 00:44:39 +0100
